@@ -1,0 +1,46 @@
+/* Base styling */
+.metrics-container {
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .metrics-container {
+        padding: 10px;
+    }
+
+    .ant-row {
+        margin-top: 0;
+    }
+
+    .ant-card {
+        margin-bottom: 20px;
+    }
+
+    .ant-card-body {
+        padding: 10px;
+    }
+
+    .ant-card-title {
+        text-align: center;
+    }
+
+    .recharts-wrapper {
+        width: 100% !important;
+    }
+
+    .ant-statistic-title {
+        text-align: center;
+    }
+
+    .ant-statistic-content {
+        text-align: center;
+    }
+}

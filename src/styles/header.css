@@ -1,0 +1,93 @@
+/* Căn giữa logo, menu, và các nút trên header */
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  padding: 0 20px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Căn giữa nội dung trong header */
+.header-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+/* Logo - căn giữa và không cho phép co giãn */
+.logo {
+  display: flex; /* Sử dụng flex để căn giữa nội dung */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  flex-shrink: 0;
+}
+
+/* Kích thước và hiển thị logo */
+.logo img {
+  height: 60px; /* Kích thước cao của logo */
+  max-width: 60px; /* Kích thước rộng tối đa của logo */
+  display: block; /* Đảm bảo không có khoảng trắng bên dưới hình ảnh */
+}
+
+/* Menu */
+.menu-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+}
+
+/* Menu trong desktop */
+.menu {
+  display: flex;
+  white-space: nowrap;
+}
+
+.menu .ant-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap; /* Không cho phép các mục menu xuống dòng */
+  overflow: hidden; /* Giới hạn nội dung bên trong phần menu */
+  white-space: nowrap; /* Ngăn việc chuyển thành dấu ba chấm */
+}
+
+.menu .ant-menu .ant-menu-item {
+  flex: 0 1 auto; /* Cho phép các mục co lại nếu cần */
+  padding: 0 10px; /* Giảm padding nếu cần thiết */
+  font-size: 14px; /* Giảm kích thước font nếu cần thiết */
+}
+
+.menu .ant-menu .ant-menu-item a {
+  white-space: nowrap; /* Đảm bảo văn bản không bị cắt */
+}
+
+/* Nút toggle menu cho thiết bị di động */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Ẩn menu trên thiết bị di động */
+  }
+
+  .menu-toggle {
+    background-color: #ffffff; /* Nền trắng */
+    color: #000000; /* Màu biểu tượng đen */
+    border: none; /* Không có đường viền */
+    width: 40px; /* Chiều rộng của nút */
+    height: 40px; /* Chiều cao của nút */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Con trỏ chuột thay đổi khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+  }
+
+  .menu-toggle:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+  }
+}

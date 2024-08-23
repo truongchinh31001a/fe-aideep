@@ -1,0 +1,27 @@
+.to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 46px !important;
+    height: 46px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: background-color 0.3s ease !important;
+    cursor: pointer !important;
+  }
+  
+  
+  .to-top-button:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+  }
+  
+  .to-top-button .anticon {
+    font-size: 24px; /* Kích thước của biểu tượng */
+  }
+  

@@ -1,0 +1,87 @@
+/* Footer styling */
+.footer {
+  background-color: #009baa; /* Dark background color */
+  color: #ffffff; /* White text for contrast */
+  padding: 20px; /* Adjust padding */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  width: 100%; /* Make sure footer takes up the full width without overflowing */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+.footer h5 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center; /* Center align h5 text */
+}
+
+.footer p {
+  margin: 0 0 10px;
+  color: #d9d9d9;
+}
+
+.footer p:hover {
+  color: #ffffff; /* Brighter color on hover */
+  transition: color 0.3s ease;
+}
+
+.footer a {
+  color: #1890ff; /* Link color */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #40a9ff; /* Brighter link color on hover */
+  text-decoration: underline;
+}
+
+/* Flexbox styling for columns */
+.footer .ant-col {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+  padding: 0 20px; /* Add horizontal padding for spacing */
+}
+
+/* Center the row horizontally */
+.footer .ant-row {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  max-width: 100%; /* Ensure the row doesn't exceed the container width */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+/* Styling for social icons */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Align icons vertically */
+  margin-left: 13px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: white;
+  margin-right: 15px; /* Space between icons */
+}
+
+.social-icons a:hover {
+  color: #40a9ff; /* Icon color on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .footer .ant-col {
+    text-align: center; /* Center text in columns for smaller screens */
+    align-items: center; /* Center items in columns for smaller screens */
+  }
+
+  .footer .social-icons {
+    justify-content: center; /* Center icons horizontally on smaller screens */
+  }
+}
