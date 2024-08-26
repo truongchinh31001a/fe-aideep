@@ -16,16 +16,16 @@ const FileUpload = ({ files, handleFiles, handleUpload, clearFiles, openImageMod
       className="upload-dragger"
     >
       <p className="ant-upload-drag-icon">
-        <UploadOutlined style={{ color: '#009baa' }}/>
+        <UploadOutlined style={{ color: '#29acf0' }}/>
       </p>
-      <p className="ant-upload-text" style={{ color: '#009baa' }}>Click or drag file to this area to upload</p>
+      <p className="ant-upload-text" style={{ color: '#29acf0' }}>Click or drag file to this area to upload</p>
     </Dragger>
     <div className="upload-buttons">
-      <Button type="primary" onClick={handleUpload} style={{ marginRight: '10px', backgroundColor: '#009baa' }}>
+      <Button type="primary" onClick={handleUpload} style={{ marginRight: '10px', backgroundColor: '#29acf0' }}>
         Predict
       </Button>
       {files.length > 0 && (
-        <Button onClick={clearFiles} style={{ color: '#009baa' }}>
+        <Button onClick={clearFiles} style={{ color: '#29acf0' }}>
           Clear
         </Button>
       )}

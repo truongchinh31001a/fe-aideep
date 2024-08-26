@@ -57,7 +57,7 @@ const ContentSection = () => {
     return (
       <div className="result-screen">
         <h1>AI-Assisted Diagnosis</h1>
-        <p style={{ color: '#009baa' }}>in Otolaryngological Endoscopy</p>
+        <p style={{ color: '#29acf0' }}>in Otolaryngological Endoscopy</p>
         
         <Row gutter={[16, 16]} className="result-cards-container">
           {files.map((file, index) => (
@@ -71,7 +71,7 @@ const ContentSection = () => {
             </Col>
           ))}
         </Row>
-        <Button type="primary" onClick={() => window.location.reload()} className="upload-more-button" style={{ backgroundColor: '#009baa' }}>
+        <Button type="primary" onClick={() => window.location.reload()} className="upload-more-button" style={{ backgroundColor: '#29acf0' }}>
           Upload More
         </Button>
       </div>
@@ -81,7 +81,7 @@ const ContentSection = () => {
   return (
     <div className="content-section">
       <h1>AI-Assisted Diagnosis</h1>
-      <p style={{ color: '#009baa' }}>in Otolaryngological Endoscopy</p>
+      <p style={{ color: '#29acf0' }}>in Otolaryngological Endoscopy</p>
       <FileUpload
         files={files}
         handleFiles={handleFiles}

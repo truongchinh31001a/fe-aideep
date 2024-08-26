@@ -91,8 +91,8 @@ const CustomHeader = () => {
         )}
       </div>
       <div className="auth-buttons">
-        <Button type="link" style={{ color: '#009baa' }}>Login</Button>
-        <Button type="primary" style={{ backgroundColor: '#009baa' }}>Register</Button>
+        <Button type="link" style={{ color: '#29acf0' }}>Login</Button>
+        <Button type="primary" style={{ backgroundColor: '#29acf0' }}>Register</Button>
       </div>
     </Header>
   );

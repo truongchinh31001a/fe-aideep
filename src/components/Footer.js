@@ -17,10 +17,11 @@ const CustomFooter = () => {
         </Col>
         <Col xs={24} sm={12} md={6}>
           <h5>Contact</h5>
-          <p>64 Cách Mạng Tháng 8, P.Khuê Trung, Quận Cẩm Lệ, TP Đà Nẵng.</p>
-          <p>Phone: 0903 595 593</p>
-          <p>Fax: 02363 679 555</p>
-          <p>Email: cskh.dn@tmmchealthcare.com</p>
+          <p>09 Nguyễn Gia Thiều, Điện Ngọc,
+          Điện Bàn, Quảng Nam</p>
+          <p>Phone: 0981 559 255</p>
+          <p>Fax: 0235 3 757 959</p>
+          <p>Email: info@pctu.edu.vn</p>
         </Col>
         <Col xs={24} sm={12} md={6} style={{ alignItems: 'center' }}>
           <h5>Follow Us</h5>
